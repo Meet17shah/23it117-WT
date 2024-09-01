@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans Oriya', Arial, Helvetica, sans-serif;
+}
+.Marvel{
+    height: 5%; /* Keeps the height of the div unchanged */
+    width: 100%; /* Ensure the container stretches to the full width of its parent */
+    background-color: #28282B;
+    text-align: center;
+    padding: 15px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    display:center;
+    align-items: center;
+    justify-content: center; /* Align content to the right */
+}
+
+
+@media (max-width: 768px) { /* Example breakpoint for smaller screens */
+    .Marvel {
+        padding: 5px 5px; /* Adjust padding for smaller screens if needed */
+    }
+}
+/*.navbar{
+
+    display: flex;
+    background-color:#28282B;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}*/
+.navbar {
+    display: flex;               /* Use flexbox */
+    justify-content: center;     /* Center the items horizontally */
+    align-items: center;         /* Center the items vertically */
+    gap: 20px;                   /* Add spacing between the items */
+    background-color: #333;      /* Optional: Set a background color */
+    padding: 10px;    
+               /* Optional: Add padding around the navbar */
+}
+
+.navbar a {
+    text-decoration: none;       /* Remove underline from links */
+    color: white;                /* Set link color */
+    padding: 10px 20px;          /* Optional: Add padding inside each link */
+    font-size: 16px;             /* Optional: Set font size */
+}
+
+.navbar a:hover {
+    background-color: #555;      /* Optional: Change background on hover */
+}
+.navbar .right {
+    display: flex;
+    align-items: center;               /* Center vertically */
+}
+
+/* Styling for the "Sign In" button */
+.navbar .right button {
+    background-color: #FF0000;         /* Red background */
+    color: white;                      /* White text color */
+    padding: 10px 20px;                /* Padding inside the button */
+    border: none;                      /* Remove default border */
+    border-radius: 5px;                /* Rounded corners */
+    cursor: pointer;                   /* Pointer cursor on hover */
+    font-size: 14px;                   /* Font size */
+    margin-right: 10px;                /* Space between button and search bar */
+    transition: background 0.3s;       /* Smooth transition for hover effects */
+}
+
+.navbar .right button:hover {
+    background-color: #CC0000;         /* Darker red on hover */
+}
+
+/* Styling for the search bar */
+.navbar .right .searchbar {
+    padding: 10px;                     /* Padding inside the search bar */
+    border: 1px solid #ccc;            /* Light gray border */
+    border-radius: 5px;                /* Rounded corners */
+    font-size: 14px;                   /* Font size */
+    width: 200px;                      /* Width of the search bar */
+    transition: border 0.3s;           /* Smooth transition for focus effects */
+}
+
+.navbar .right .searchbar:focus {
+    border-color: #FF0000;             /* Red border on focus */
+    outline: none;                     /* Remove default outline */
+}
+.main-slide {
+    display: flex;
+    position: relative;
+    height: 33vw;
+}
+
+
+.shadow{
+    position: relative;
+    left: 0;
+    width: 50%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1)35%, rgba(25, 0, 0, 0)100%);
+    z-index: 100;
+}
+
+ #s{
+    margin-left: 15%;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    height: 33vw;
+} 
+ #s img{
+    margin:auto;
+    object-fit:cover;
+    display:flex;
+    width:90%;
+}  
+#s2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color:rgba(0, 0, 0, 1);
+}
+
+#s2 img {
+    width: 500px; 
+    height:500px;
+    width:100%;
+    object-fit: cover;
+    display:flex;
+    display: block;
+
+}
+.main-slide img{
+    
+    position: absolute;
+    height: 33vw;
+}
+
+ /* .slides {
+    height: 350%;
+   /* margin: 50px;
+    padding: 50px 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    height: 7vw;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+} */
+
+/* .slides img {
+    height: 10vw;
+    border-radius: 15px;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: 1; 
+}  */
+
+.slides::before, .slides::after {
+    content: "";
+    flex: 0 0 100px; /
+}
+
+.slides:hover img {
+    opacity: 0.6; /*opacity for non hovered images*/
+}
+
+.slides img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    opacity: 1; 
+    z-index: 1; 
+}
+#info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-top: 15vw;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-left: 160px;
+}
+
+#sub-info {
+    width: 600px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1vw;
+    color: white;
+    font-size: 16px;
+    margin-left: 160px;
+}
+
+#download-now {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -380px;
+}
+
+#download-now button{
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14;
+    border: none;
+    /* margin-left: -200px;; */
+    transition: background-color 0.3s ease-in, border 0.3s ease;
+}
+
+#download-now button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #ffffff;
+    background-color: #e8e1e1;
+}
+
+@media only screen and (max-width: 786px) {
+    #i img {
+        margin-top: 7vw;
+        margin-left: 10%;
+        height: 6vw;
+        width: auto;
+    }
+}
+    #info {
+        font-family: "Poppins", sans-serif;
+        font-weight:bold;
+        font-style: normal;
+        margin-top: 12vw;
+        color: white;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+
+    #sub-info {
+        display: flex;
+    }
+
+    #download-now {
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -220px;
+    }
+    
+    #download-now button{
+        background-color: white;
+        color: black;
+        height: 50px;
+        width: 100px;
+        border-radius: 25px;
+        font-weight: 300;
+        font-size: 11px;
+        border: none;
+        /* margin-left: -200px;; */
+        transition: background-color 0.3s ease-in, border 0.3s ease;
+    }
+
+    /* .slides {
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        height: 8vw;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }  */
+    .slides {
+       height:100%;
+        width:100%;
+        padding: 100px 50px;
+        display: flex;
+        height: 10vw;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+    }
+    
+    
+    .slides img {
+        height: 18vw;
+        margin: 1px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+        opacity: 1;
+       
+    
+} 
+ /* .s2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: DodgerBlue;
+}
+
+.s2 img {
+    background-color: #f1f1f1;
+    color: white;
+    width: 40px;
+    height: 40px;
+  }  */
+#s2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color:rgba(0, 0, 0, 1);
+}
+
+#s2 img {
+    /* width: 500px; */
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    display:flex;
+    display: block;
+
+}
+.navbar1 {
+    display: flex;               /* Use flexbox */
+    justify-content: center;     /* Center the items horizontally */
+    align-items: center;         /* Center the items vertically */
+    gap: 20px;                   /* Add spacing between the items */
+    background-color: #333;      /* Optional: Set a background color */
+    padding: 10px;               /* Optional: Add padding around the navbar */
+}
+
+.navbar1 a {
+    text-decoration: none;       /* Remove underline from links */
+    color: white;                /* Set link color */
+    padding: 10px 20px;          /* Optional: Add padding inside each link */
+    font-size: 16px;             /* Optional: Set font size */
+}
+
+.navbar1 a:hover {
+    background-color: #555;      /* Optional: Change background on hover */
+}
+.follow-us {
+    height: 22vw;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.864);
+}
+
+.follow-us .caption{
+    padding: 50px;
+    text-align: center;
+    color:white;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 34px;
+}
+
+.follow-us .logos {
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.follow-us .logos i {
+    padding: 30px;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.follow-us .logos i:hover {
+    transform: scale(1.02);
+}
+
+.nav1 {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.864);
+    justify-content: center;
+    text-align:left;
+    align-items: center;
+    font-size: 15px;
+    font-style: italic;
+    color:white;
+
+}
+footer {
+    background-color: black;
+    padding: 20px opx;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 10px;
+    max-width: 1400px;
+    margin:0;
+}
+
+.footer-section {
+    flex:1;
+    min-width: 200px;
+    margin: 10px;
+    color:white;
+    display: flex;
+}
+.footer-bottom {
+    border-top: 1px solid white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content:center;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.footer-bottom img {
+    margin-bottom: 5px;
+    margin-left:655px;
+    height: 140px;
+    width: auto;
+    display: flex;
+    object-fit: contain;
+  
+}
+
+.footer-bottom a {
+    color: white;
+}
+
+.footer-legal {
+    padding: 10px 0;
+    border-top: 1px solid white;
+    font-size: 12px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.footer-legal a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-legal a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+
+    .Marvel {
+        font-size: 18px; /* Smaller font size */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .navbar, .navbar1 {
+        flex-direction: column; /* Stack navbar items vertically */
+        gap: 10px; /* Reduce gap between items */
+        padding: 5px; /* Reduce padding */
+    }
+
+    .navbar a, .navbar1 a {
+        padding: 5px 10px; /* Reduce padding inside links */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .navbar .right, .navbar1 .right {
+        flex-direction: column; /* Stack button and search bar vertically */
+        width: 100%;
+        gap: 10px;
+    }
+
+    .navbar .right button, .navbar1 .right button {
+        width: 100%; /* Full width buttons */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .navbar .right .searchbar, .navbar1 .right .searchbar {
+        width: 100%; /* Full width search bar */
+    }
+
+    .slides {
+        flex-direction: column; /* Stack slides vertically */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .slides img {
+        height: auto; /* Auto height */
+        width: 100%; /* Full width images */
+        margin-bottom: 10px; /* Add margin between images */
+    }
+
+    #info, #sub-info, #download-now {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    #download-now button {
+        width: 100%; /* Full width buttons */
+    }
+
+    .follow-us .caption {
+        font-size: 24px; /* Reduce font size */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .follow-us .logos i {
+        font-size: 50px; /* Smaller icons */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .nav1 {
+        font-size: 12px; /* Smaller font size */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer sections vertically */
+        align-items: center;
+    }
+
+    .footer-bottom img {
+        margin: 20px auto; /* Center image */
+    }
+
+    .footer-bottom, .footer-legal {
+        font-size: 12px; /* Smaller font size */
+        text-align: center; /* Center text */
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar, .navbar1 {
+        padding: 5px; /* Reduce padding even more */
+    }
+
+    .navbar a, .navbar1 a {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .slides img {
+        height: auto; /* Auto height */
+        width: 100%; /* Full width images */
+        margin-bottom: 5px; /* Smaller margin between images */
+    }
+
+    #info {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    #download-now button {
+        font-size: 12px; /* Smaller button text */
+    }
+
+    .follow-us .caption {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .follow-us .logos i {
+        font-size: 40px; /* Smaller icons */
+    }
+
+    .footer-bottom img {
+        height: 100px; /* Reduce image size */
+    }
+}
