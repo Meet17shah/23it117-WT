@@ -536,7 +536,7 @@ footer {
         
         .slides img {
           width: calc(20% - 5px); /* Adjust width for 5 images side by side */
-          margin: 2.5px; /* Adjust margin for better spacing */
+          margin: 8px; /* Adjust margin for better spacing */
         }
       }
     .nav1{
