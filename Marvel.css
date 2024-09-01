@@ -29,16 +29,6 @@ body {
         padding: 5px 5px; /* Adjust padding for smaller screens if needed */
     }
 }
-/*.navbar{
-
-    display: flex;
-    background-color:#28282B;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}*/
 .navbar {
     display: flex;               /* Use flexbox */
     justify-content: center;     /* Center the items horizontally */
@@ -48,14 +38,12 @@ body {
     padding: 10px;    
                /* Optional: Add padding around the navbar */
 }
-
 .navbar a {
     text-decoration: none;       /* Remove underline from links */
     color: white;                /* Set link color */
     padding: 10px 20px;          /* Optional: Add padding inside each link */
     font-size: 16px;             /* Optional: Set font size */
 }
-
 .navbar a:hover {
     background-color: #555;      /* Optional: Change background on hover */
 }
@@ -63,8 +51,6 @@ body {
     display: flex;
     align-items: center;               /* Center vertically */
 }
-
-/* Styling for the "Sign In" button */
 .navbar .right button {
     background-color: #FF0000;         /* Red background */
     color: white;                      /* White text color */
@@ -76,12 +62,9 @@ body {
     margin-right: 10px;                /* Space between button and search bar */
     transition: background 0.3s;       /* Smooth transition for hover effects */
 }
-
 .navbar .right button:hover {
     background-color: #CC0000;         /* Darker red on hover */
 }
-
-/* Styling for the search bar */
 .navbar .right .searchbar {
     padding: 10px;                     /* Padding inside the search bar */
     border: 1px solid #ccc;            /* Light gray border */
@@ -100,8 +83,6 @@ body {
     position: relative;
     height: 33vw;
 }
-
-
 .shadow{
     position: relative;
     left: 0;
@@ -148,27 +129,6 @@ body {
     position: absolute;
     height: 33vw;
 }
-
- /* .slides {
-    height: 350%;
-   /* margin: 50px;
-    padding: 50px 20px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    height: 7vw;
-    align-items: center;
-    justify-content: space-around;
-    background-color: black;
-} */
-
-/* .slides img {
-    height: 10vw;
-    border-radius: 15px;
-    
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-    opacity: 1; 
-}  */
 
 .slides::before, .slides::after {
     content: "";
@@ -272,17 +232,6 @@ body {
         /* margin-left: -200px;; */
         transition: background-color 0.3s ease-in, border 0.3s ease;
     }
-
-    /* .slides {
-        margin: 10px;
-        padding: 20px;
-        display: flex;
-        height: 8vw;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        
-    }  */
     .slides {
        height:100%;
         width:100%;
@@ -293,32 +242,14 @@ body {
         justify-content: space-around;
         background-color: black;
     }
-    
-    
     .slides img {
         height: 18vw;
         margin: 1px;
         border-radius: 15px;
         cursor: pointer;
         transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-        opacity: 1;
-       
-    
+        opacity: 1; 
 } 
- /* .s2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    background-color: DodgerBlue;
-}
-
-.s2 img {
-    background-color: #f1f1f1;
-    color: white;
-    width: 40px;
-    height: 40px;
-  }  */
 #s2 {
     display: flex;
     justify-content: center;
@@ -326,7 +257,6 @@ body {
     height: 500px;
     background-color:rgba(0, 0, 0, 1);
 }
-
 #s2 img {
     /* width: 500px; */
     height:100%;
@@ -334,7 +264,6 @@ body {
     object-fit: cover;
     display:flex;
     display: block;
-
 }
 .navbar1 {
     display: flex;               /* Use flexbox */
@@ -549,39 +478,86 @@ footer {
         margin: 10px 0;
     }
 }
-
 @media only screen and (max-width: 480px) {
+    .Marvel {
+        font-size: 16px;
+        padding: 5px;
+    }
+
     .navbar, .navbar1 {
-        padding: 5px; /* Reduce padding even more */
+        gap: 5px;
+        padding: 5px;
     }
 
     .navbar a, .navbar1 a {
-        font-size: 12px; /* Smaller font size */
+        font-size: 12px;
+        padding: 5px;
     }
 
-    .slides img {
-        height: auto; /* Auto height */
-        width: 100%; /* Full width images */
-        margin-bottom: 5px; /* Smaller margin between images */
+    .navbar .right button, .navbar1 .right button {
+        padding: 8px 12px;
+        font-size: 12px;
     }
 
-    #info {
-        font-size: 18px; /* Reduce font size */
+    .navbar .right .searchbar, .navbar1 .right .searchbar {
+        width: 100%;
+        font-size: 12px;
+    } 
+     
+#s2{
+    max-width: 100%;
+    min-height: 185px;
+    max-height: 270px;
+}
+      
+    .slides {
+        height: 100%;
+        width: 100%;
+        padding: 20px; /* Adjust padding for mobile */
+        display: flex;
+        flex-wrap: nowrap; /* Ensure images don't wrap to next line */
+        justify-content: space-between; /* Distribute images evenly */
+        background-color: black;
+      }
+      
+      .slides img {
+        width: calc(20% - 10px); /* Calculate width for 5 images side by side */
+        margin: 5px; /* Add margin between images */
+        border-radius: 15px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+        opacity: 1;
+      }   
+      /* For iPhone 14 Pro Max (screen size: 428px x 926px) */
+      @media only screen and (max-width: 428px) {
+        .slides {
+          padding: 10px; /* Adjust padding for mobile */
+        }
+        
+        .slides img {
+          width: calc(20% - 5px); /* Adjust width for 5 images side by side */
+          margin: 2.5px; /* Adjust margin for better spacing */
+        }
+      }
+    .nav1{
+        font-size: 5px;
+        display:flex;
     }
-
-    #download-now button {
-        font-size: 12px; /* Smaller button text */
+    #info, #sub-info {
+        font-size: 15px;
     }
-
     .follow-us .caption {
-        font-size: 20px; /* Reduce font size */
+        font-size: 20px;
+        padding: 10px;
     }
 
     .follow-us .logos i {
-        font-size: 40px; /* Smaller icons */
+        font-size: 40px;
+        padding: 15px;
     }
-
-    .footer-bottom img {
-        height: 100px; /* Reduce image size */
+    .footer-bottom img{
+        display:flex;
+        height:120px;
     }
 }
+ 
